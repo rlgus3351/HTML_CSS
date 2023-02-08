@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex05_목록태그</title>    
+</head>
+<body>
+    <h2> 목록태그 </h2>
+    <h3> 순서가 없는 ul 태그(Unordered List)</h3>
+    <!-- type 속성 : circle, square, none, disc 등-->
+    <ul type = "disc">
+        초록팀
+        <li>
+            권기현
+            <ul type = "circle">
+                <li> 회사 : 동구 캠퍼스</li>
+                <li> 강의 : web강의</li>
+            </ul>
+        </li>
+        <li>
+            김호원
+            <ul type = "circle">
+                <li> 회사 : 남구 CGI</li>
+                <li> 강의 : Python강의</li>
+            </ul>
+        </li>
+        
+        <li>왕지강</li>
+        <li>심형선</li>
+        <li>이세미</li>
+    </ul>
+    <hr>
+    <h3>순서가 있는 ol태그(ordered list)</h3>
+    <!-- type 속성 : a,A,로마숫자(i,I),1(기본값) 등
+        start : 시작할 숫자 지정 
+        reversed : 내림차순 가능 -->
+    <ol type = "1" start="50" >
+        멜론차트 100위
+        <li> NewJeans - Ditto</li>
+        <li>NewJeans - OMG</li>
+        <li>NewJeans - Hype boy</li>
+        <li>태양 - VIBE</li>
+        <li>윤하 - 사건의 지평선</li>
+    </ol>
+    <hr>
+    <h3>구매 목록</h3>
+    <ul>
+        <li>딸기</li>
+        <li>소고기</li>
+        <li>샤브샤브</li>
+    </ul>
+    <h3>샤브샤브 순서</h3>
+    <ol type = "A">
+        <li>고기를 볶는다</li>
+        <li>육수와 소스를 넣는다</li>
+        <li>재료들을 넣는다</li>
+        <li>칼국수 면을 넣는다</li>
+    </ol>
+    <hr>
+    <h3> 좋아하는 요리 순서</h3>
+    <ul>
+        <li>
+            한식
+            <ol>
+                <li>
+                    국
+                    <ol>
+                        <li>미역국</li>
+                        <li>사골국</li>
+                    </ol>
+                </li>
+                <li>
+                    반찬
+                    <ol>
+                        <li>숙주나물</li>
+                        <li>장조림</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>일식</li>
+        <li>중식</li>
+    </ul>   
+</body>
+</html>
