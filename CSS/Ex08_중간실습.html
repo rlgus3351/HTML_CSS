@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 2. css 적용하기 */
+        /* 2-1. 마우스를 올리기 전까지 sub태그가 보이지 않게 */
+        sup{
+            display: none;
+        }
+        /* 2-2 a요소에 마우스를 올리면(기준) sup태그가 보이게 */
+        /* 기준선택자 계층선택자 기호 변경할 요소의 선택자 */
+        a:hover sup{
+            display: inline;
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 1. HTML 뼈대 만들기 -->
+    <!-- a태그의 역할 : 하이퍼링크 기능 -->
+    <!-- a태그의 content를 눌렀을 때 hyperlink기능 동작 -->
+
+    <a href="https://www.naver.com"> 네이버 
+    </a>
+    <sup> www.naver.com </sup>
+    <br>
+    <a href="https://www.daum.com"> 다음 
+    </a>
+    <sup> www.daum.com </sup>
+
+</body>
+</html>

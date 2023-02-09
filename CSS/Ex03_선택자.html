@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1. 전체 선택자 */
+        /* *{
+          color: green;  
+        } */
+        /* 2. 요소 선택자 */
+        /* h2{
+            color: blue;
+        } */
+        /* 3. 클래스 선택자(.)*/
+        /* java 수업을 들어온 선생님만 글자 배경색을 검정으로 변경 */
+        /* .java {
+            background-color: black;
+        } */
+        /* 4. 아이디 선택자(#) */
+        /* database 수업을 들어온 선생님만 글자 배경색을 빨간색으로 변경 */
+        /* #database{
+            background-color: red;
+        } */
+        /* html 수업을 들어온 선생님만 글자배경색을 회색으로 변경 */
+        /* #html{
+            background-color: gray;
+        } */
+
+        /* 성별이 여자인 선생님들만  글씨 두께 bold로 지정*/
+        /* .female{
+            font-weight: bold;
+            color: white;
+        } */
+        /* 5. 그룹 선택자 (선택자,선택자) */
+        /* 클래스가 java이고 여성인 사람에게 글씨 크기를 30px로 준다. */
+        /* .female,.java{
+            font-size: 30px;
+        } */
+        /* 6. 결합(계층) 선택자 
+            :자식, 자손, 일반 동위(형제), 인접동위(인접 형제)
+            : > , , ~ , + 
+            :기준 선택자 , 계층선택자기호, 변경할 선택자 
+        */
+
+        /* 6-1. body를 기준으로 해서 모든 li글자 크기 20px로 변경 */
+        body  li{
+            font-size: 20px;
+        }
+        /* 6-2. 첫번째 li를 기준으로 해서 class명이 female인 요소의 글자색을 green으로 변경 */
+        /*      모든 li를 기준으로 검사 */
+        li~.female{
+            color: green;
+        }
+
+        /* 6-3. li중에 class가 java인 요소만 배경색을 gray로 지정*/
+        /* li중에서 class명이 java인 요소들만 선택 ---> li.class명 */
+        li.java{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h2> 빅데이터반 </h2>
+    <ul>
+        <li class="java">박병관</li>
+        <li class="java female">임경남</li>
+        <li id="html", class="female">박수현</li>
+        <p class="java"> Java 수업</p>
+        <li id = "database">신인호</li>
+        <li>강규남</li>
+    </ul>
+</body>
+</html>
